@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Riot Games</title>
 </head>
 
@@ -14,8 +19,8 @@
             <div class="logo">
                 <img src="images/riot-logo.png" alt="logo">
             </div>
-            <form class="conteiner-forms">
-                <span>LOGIN</span>
+            <form class="conteiner-conteudo">
+                <span class="titulo">LOGIN</span>
                 <label for="usuario"></label>
                 <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
                 <label for="senha"></label>
@@ -25,12 +30,20 @@
                         <input type="checkbox" required>Lembrar de mim</label>
                     <a href="https://www.google.com/?hl=pt_BR">Esqueceu a senha?</a>
                 </div>
+                <input type="submit" value="Entrar">
             </form>
-            <button>Entrar</button>
+            <div class="link-cadastro">
+                <span>Não tem uma conta?</span>
+                <a href="https://www.google.com/?hl=pt_BR">Cadastrar</a>
+            </div>
             <span>Ou entre com:</span>
-            <div>
-                <span>google</span>
-                <span>xbox</span>
+            <div class="botoes">
+                <button onclick="document.location='default.asp'">
+                    <img src="images/logo-google.png" alt="logo xbox" class="icone-botao">
+                </button>
+                <button class="xbox" onclick="document.location='default.asp'">
+                    <img class="logo-xbox" src="images/logo-xbox.png" alt="logo google" class="icone-botao">
+                </button>
             </div>
         </div>
     </main>
